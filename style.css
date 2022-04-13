@@ -1,0 +1,773 @@
+/* navbar */
+
+
+
+
+
+
+
+body {
+    font: normal 300 18px "Roboto", sans-serif;
+    overflow-x: hidden;
+    text-align: justify;
+    background-color: rgb(0, 0, 0);
+    color: whitesmoke;
+  }
+   
+  #menu-nav {
+    width: 100%;
+    /* margin: 130px auto; */
+    background-color: #000000;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  }
+   
+  #navigation-bar ul {
+    border-radius: 4px;
+    overflow: hidden;
+  }
+  #navigation-bar li {
+    float: left;
+    width: 20%;
+  }
+  #navigation-bar li:hover a::before {
+    right: 0;
+    left: 0;
+  }
+  #navigation-bar a {
+    color: #848484;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    padding: 20px 0;
+    display: block;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  #navigation-bar a:hover {
+    color: #d936a5;
+  }
+  #navigation-bar a::before {
+    content: "";
+    transition: all 0.4s ease-in-out;
+    position: absolute;
+    right: 50%;
+    left: 50%;
+    bottom: 0;
+    height: 2px;
+    background-color: #d936a5;
+  }
+  #navigation-bar a:hover::before {
+    right: 0;
+    left: 0;
+  }
+   
+  li {
+   list-style: none;
+  }
+
+  /* parallax landing page */
+
+  #parallax-image
+  {
+    background-image: url("img/kitagawahq.png");
+    height: 770px;
+    margin-bottom: 50px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+  }
+
+  h1 
+  {
+    color:whitesmoke;
+    font-size: 50px;
+    width: 100%;
+  }
+
+/* titles and subtitles */
+
+
+.info .image img
+{
+  border-radius: 20px;
+}
+
+
+.introline
+{
+  font: normal 300 30px "Roboto", sans-serif;
+  text-align: center;
+}
+
+.info .def
+{
+  font: normal 300 25px "Roboto", sans-serif;
+  text-align: justify;
+}
+
+
+.info .event
+{
+  font: normal 300 50px "Roboto", sans-serif;
+  text-align: justify;
+}
+
+
+.info .card-title
+{
+  font-weight: bold;
+}
+
+  /* fixed parallax */
+
+  .info .highlight1 
+  {
+    /* The image used */
+    background-image: url("img/highlight1.jpg");
+  
+    /* Set a specific height */
+    min-height: 350px; 
+  
+ 
+ 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+  .info .highlight2 
+  {
+    /* The image used */
+    background-image: url("img/highlight2.jpg");
+  
+    /* Set a specific height */
+    min-height: 350px; 
+  
+ 
+ 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+
+  .info .highlight3
+  {
+    /* The image used */
+    background-image: url("img/bridge\ scene\ \(1\).jpg");
+  
+    /* Set a specific height */
+    min-height: 350px; 
+  
+ 
+ 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+
+.card
+{
+  border: 0;
+}
+
+
+/* hr lines */
+
+.hr1
+{
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5%;
+  border: none;
+  background-color: rgb(246, 47, 203) !important;
+  height: 4px !important; 
+
+}
+
+.hr2
+{
+  /* background-color: rgb(246, 47, 203) !important;
+  height: 10px !important; 
+  border: 0; */
+  border: none;
+  border-top: 2px solid;
+  color: rgb(251, 0, 255);
+  height: 10px !important;
+}
+
+#vertical-line
+{
+  width: 1px;
+  height: 500px;
+  background-color: aliceblue;
+}
+
+
+
+
+.event:after{
+  content: "";
+  display: block;
+  width: 120px;
+  height: 20px;
+  background: rgb(221, 33, 152);
+  position: absolute;
+  left: 0;
+  top: 50%;
+  z-index: -2;
+
+}
+
+
+
+
+
+/* scroll to top */
+
+
+#button {
+  display: inline-block;
+  background-color: #000000;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  border-radius: 4px;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  transition: background-color .3s, 
+    opacity .5s, visibility .5s;
+  opacity: 0;
+  visibility: hidden;
+  z-index: 1000;
+}
+#button::after {
+  content: "\f077";
+  font-family: FontAwesome;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 2em;
+  line-height: 50px;
+  color: #fff;
+}
+#button:hover {
+  cursor: pointer;
+  background-color: rgb(255, 0, 234);
+}
+#button:active {
+  background-color: #555;
+}
+#button.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+
+
+
+  /* footer */
+
+
+
+/* intro */
+
+
+.olap {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+}
+.olap .container {
+  width: 90%;
+  max-width: 1000px;
+  margin: 50px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: aqua; */
+}
+.left {
+  width: 50%;
+  height: 600px;
+  background: url(img/kitagawa.jpg)
+    no-repeat center / cover;
+  border-radius: 8px;
+}
+.right {
+  width: 50%;
+  min-height: 400px;
+  background-color: rgb(221, 33, 152);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  border-radius: 8px;
+  color: white;
+  margin-left: -150px;
+}
+.right h1 {
+  font-size: 40px;
+  font-weight: lighter;
+}
+.right p {
+  margin: 20px 0;
+  font-weight: 500;
+  line-height: 25px;
+}
+.right a {
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  padding: 20px 30px;
+  display: inline-block;
+  letter-spacing: 2px;
+}
+
+@media only screen and (max-width: 768px) {
+  .olap .container {
+    flex-direction: column;
+    width: 100%;
+    margin: 0 20px;
+  }
+  .left {
+    width: 100%;
+    height: 400px;
+  }
+  .right {
+    width: 90%;
+    margin: 0;
+    margin-top: -100px;
+  }
+}
+
+
+
+
+/* arrow animation */
+
+.box 
+{
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.box span
+{
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-bottom: 1px solid rgb(255, 255, 255);
+  border-right: 1px solid rgb(255, 255, 255);
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 2s infinite;
+}
+
+.box span:nth-child(2)
+{
+  animation-delay: -0.2s;
+
+}
+
+.box span:nth-child(3)
+{
+  animation-delay: -0.4s;
+}
+
+
+
+@keyframes animate
+
+{
+  0%
+  {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px);
+  }
+
+  50%
+  {
+    opacity: 1;
+  }
+  100%
+  {
+    opacity: 0;
+    transform: rotate(45deg) translate(20px, 20px);
+  }
+}
+
+
+
+/* audio player __________________________________ */
+
+
+
+.audio-players img,
+video {
+	/* max-width: 100%;
+	height: auto; */
+
+  width: 300px;
+  height: 300px;
+}
+
+
+
+
+.body .audio-players 
+
+{
+  font-family: sans-serif;
+  background-image: url("https://steamuserimages-a.akamaihd.net/ugc/961964348755441641/AD7A22B5611A887B38ECF7F6226A39C73A49EFC4/");
+
+/* Full height */
+height: 100%; 
+
+
+/* Center and scale the image nicely */
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+padding: 0;
+margin: 0;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+
+
+
+.audio-player {
+	position: relative;
+	width: 100%;
+	height: 0;
+	text-align: center;
+	padding-bottom: 100%;
+	background-color: #ff05c5;
+}
+
+.audio-player video {
+	opacity: 0;
+	transition: opacity 300ms;
+	will-change: opacity;
+}
+
+.audio-player:focus .audio-player__cover,
+.audio-player:hover .audio-player__cover,
+.audio-player.is-playing .audio-player__cover {
+	opacity: 0.35;
+}
+
+.audio-player:focus .audio-player__title,
+.audio-player:hover .audio-player__title,
+.audio-player.is-playing .audio-player__title {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+.audio-player:focus .audio-player__control-icon,
+.audio-player:hover .audio-player__control-icon,
+.audio-player.is-playing .audio-player__control-icon {
+	transform: scale(1.15);
+}
+
+.audio-player.is-playing .audio-player__cover {
+	opacity: 0;
+}
+
+.audio-player.is-playing video {
+	opacity: 1;
+}
+
+.audio-player.is-playing .audio-player__control-icon:before {
+	transform: translateY(0);
+}
+
+.audio-player.is-playing .audio-player__control-icon:after {
+	transform: translateY(50px);
+}
+
+.audio-player__cover {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	transition: opacity 350ms;
+	will-change: opacity;
+}
+
+.audio-player__title {
+	position: absolute;
+	color: #fff;
+	font-size: 22px;
+	font-weight: 500;
+	left: 10px;
+	right: 10px;
+	bottom: 0;
+	top: 50%;
+	padding-top: 50px;
+	transform: translateY(-5%);
+	z-index: 10;
+	opacity: 0;
+	transition: all 300ms;
+	will-change: transform, opacity;
+}
+
+.audio-player__control {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	z-index: 20;
+	border: none;
+	background: none;
+	cursor: pointer;
+}
+
+.audio-player__control:focus {
+	outline: none;
+}
+
+.audio-player__control-icon {
+	position: absolute;
+	width: 65px;
+	height: 65px;
+	border-radius: 50%;
+	border: 3px solid #fff;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+	overflow: hidden;
+	transition: all 250ms ease-out;
+	transform: scale(1);
+	will-change: transform;
+}
+
+.audio-player__control-icon::after,
+.audio-player__control-icon::before {
+	transition: all 200ms;
+	will-change: transform;
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+.audio-player__control-icon::after {
+	left: 5px;
+	width: 0;
+	height: 0;
+	border-top: 16px solid transparent;
+	border-bottom: 16px solid transparent;
+	border-left: 20px solid #fff;
+	transform: translateY(0);
+}
+
+.audio-player__control-icon::before {
+	width: 15px;
+	height: 30px;
+	border-right: 6px solid #fff;
+	border-left: 6px solid #fff;
+	transform: translateY(-50px);
+}
+
+.audio-players {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
+
+.audio-players li {
+	display: inline-block;
+	vertical-align: top;
+	max-width: 300px;
+	margin: 20px;
+}
+
+
+
+/* quiz */
+
+
+
+#quizcontainer{
+  margin : 20px auto;
+  background-color: rgb(0, 0, 0);
+  height: 300px;
+  width : 700px;
+  border-radius: 0px;
+  box-shadow: 0px 3px 3px 3px;
+  position: relative;
+}
+#start{
+  font-size: 1.5em;
+  font-weight: bolder;
+  word-break: break-all;
+  width:100px;
+  height:150px;
+  border : 2px solid rgb(255, 255, 255);
+  text-align: center;
+  cursor: pointer;
+  position: absolute;
+  left:300px;
+  top:50px;
+  color : rgb(255, 255, 255);
+}
+#start:hover{
+  border: 3px solid rgb(255, 5, 230);
+  color : rgb(255, 5, 230);
+}
+
+#qImg{
+  width : 200px;
+  height : 200px;
+  position: absolute;
+  left : 0px;
+  top : 0px;
+}
+#qImg img{
+  width : 200px;
+  height : 200px;
+  border-top-left-radius: 5px;
+}
+
+#question{
+  width:500px;
+  height : 125px;
+  position: absolute;
+  right:0;
+  top:0;
+}
+#question p{
+  margin : 0;
+  padding : 15px;
+  font-size: 1.25em;
+}
+
+#choices{
+  width : 480px;
+  position: absolute;
+  right : 0;
+  top : 125px;
+  padding : 10px
+}
+.choice{
+  display: inline-block;
+  width : 135px;
+  text-align: center;
+  border : 1px solid grey;
+  border-radius: 5px;
+  cursor: pointer;
+  padding : 5px;
+}
+.choice:hover{
+  border : 2px solid rgb(255, 0, 234);
+  font-weight: bold;
+}
+
+#timer{
+  position: absolute;
+  height : 100px;
+  width : 200px;
+  bottom : 0px;
+  text-align: center;
+}
+#counter{
+  font-size: 3em;
+}
+#btimeGauge{
+  width : 150px;
+  height : 10px;
+  border-radius: 10px;
+  background-color: lightgray;
+  margin-left : 25px;
+}
+#timeGauge{
+  height : 10px;
+  border-radius: 10px;
+  background-color: rgb(255, 0, 0);
+  margin-top : -10px;
+  margin-left : 25px;
+}
+#progress{
+  width : 500px;
+  position: absolute;
+  bottom : 0px;
+  right : 0px;
+  padding:5px;
+  text-align: right;
+}
+.prog{
+  width : 25px;
+  height : 25px;
+  border: 1px solid #000;
+  display: inline-block;
+  border-radius: 50%;
+  margin-left : 5px;
+  margin-right : 5px;
+}
+#scoreContainer{
+  margin : 20px auto;
+  background-color: white;
+  opacity: 0.8;
+  height: 300px;
+  width : 700px;
+  border-radius: 5px;
+  box-shadow: 0px 5px 15px 0px;
+  position: relative;
+  display: none;
+}
+#scoreContainer img{
+  position: absolute;
+  top:100px;
+  left:325px;
+}
+#scoreContainer p{
+  position: absolute;
+  display: block;
+  width : 59px;
+  height :59px;
+  top:130px;
+  left:325px;
+  font-size: 1.5em;
+  font-weight: bold;
+  text-align: center;
+}
+
+
+.quiztitle 
+{
+  text-align: center;
+}
